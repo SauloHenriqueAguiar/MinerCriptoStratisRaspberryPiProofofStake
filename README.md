@@ -9,7 +9,8 @@ A seguir é mostrado a Blcokchain da Stratis iniciando:
 
 ![agfwe](https://user-images.githubusercontent.com/78816148/143180336-0d3dfb85-1cfd-4705-8159-ab492d8ed0e9.png)
 
-![gdghet](https://user-images.githubusercontent.com/78816148/143180567-ccf9928a-e21d-4790-b749-8b1795e5845a.png)
+![inicistrati](https://user-images.githubusercontent.com/78816148/143181588-e6c08b3b-ee15-4b7a-88ba-4de0dfbdf781.png)
+
 
 a seguir é mostrado o menu da  rede Stratis: 
 ![menu](https://user-images.githubusercontent.com/78816148/143180960-b0b15710-1093-41b0-b163-9fdc121b3b41.png)
