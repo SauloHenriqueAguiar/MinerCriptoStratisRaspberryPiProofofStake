@@ -1,0 +1,55 @@
+Mineração Proof os Stake Criptomoeda Stratis
+
+1- Faça download da wallet da Stratis em: https://www.stratisplatform.com/wallets
+
+2- Crie uma conta na wallet
+
+3- Anote as senhas de 12 palavras pois será util no setup
+
+4- com a raspberry pi em funcionamento de o seguinte comando para instalar pacote .NET:
+
+sudo curl -SL -o dotnet.tar.gz https://dotnetcli.blob.core.windows.net/dotnet/sdk/master/dotnet-sdk-latest-linux-arm64.tar.gz
+
+5- baixa a stratis :
+
+sudo wget https://github.com/stratisproject/StraxCLI/archive/refs/tags/StraxCLI-1.0.0.zip
+
+6- criar uma pasta de sistema para copiar o conteúdo do arquivo extraído
+
+sudo mkdir -p /usr/share/dotnet
+
+7 - o tar.gz extraído para essa pasta
+
+sudo tar -zxf dotnet.tar.gz -C /usr/share/dotnet
+
+8- criar um link simbólico, para que o sistema possa encontrar onde ele procurou por dotnet
+
+sudo ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet
+
+
+9- instalando o full node stratis
+
+sudo wget -O SNode.zip https://github.com/stratisproject/StratisFullNode/releases/download/1.0.7.3/Stratis.StraxD-linux-arm64.zip
+
+
+10- extrair o arquivo zip baixado para a pasta StraxNode
+
+sudo unzip SNode.zip -d ~/StraxNode
+
+11- Iniciando o Stratis FullNode
+
+sudo screen dotnet ~/StraxNode/Stratis.StraxD.dll run -mainnet
+
+12- espere a blockchain da Stratis carregar
+
+13- assim que terminar de carregar coloque o seguinte comando:
+
+sudo unzip StraxCLI-1.0.0.zip -d -/StraxCLI
+
+14- para viasualizar o menu digite o comando:
+
+sudo python3 ~/StraxCLI/StraxCLI-1.0.0/straxcli.py
+
+15- aparecera o menu voce pode iniciar staking ve seu saldo e outras opções
+
+
